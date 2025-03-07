@@ -1,0 +1,8 @@
+### useContextとは
+* ReactHooksの一つでグローバルにステートを管理できる仕組み
+* 通常であれば親コンポーネントから子コンポーネントにデータを渡す際はpropsを介して行う
+* バケツリレーでは複雑になってしまうからuseContextで異なる階層のコンポーネントとデータの共有を行うことができる
+
+https://qiita.com/__knm__/items/69a4c6bf916a2d1ca9dd
+
+* 親にcreateContextをimportして変数にcreateContext(~)を定義しておいて孫コンポーネントでuseContextと親でexportした内容をimport、孫で変数にuseContext(importしたやつ表示させたいやつ)と定義してreturn文の中で孫の変数を呼び出すと表示できる
